@@ -1,71 +1,85 @@
-# SQL Projects ![icons8-mysql-logo-48](https://github.com/swaapnaa/SQL-PROJECTS/assets/149737403/95180ab6-019c-4ba1-9165-e9449cb95614)
+#  SQL Projects — Pizza Sales & Walmart Sales Analysis
 
+##  Tools Used
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Advanced-blue?style=for-the-badge)
 
-THESE PROJECTS SHOWCASES MY EXPERTISE IN SQL AND MY ABILITY TO WORK WITH COMPLEX DATA SETS, AND HIGHLIGHTS MY SKILLS IN DATA EXPLORATION, DATA VISUALIZATION, AND DATA ANALYSIS.
+---
 
-## Pizza Sales Analysis
+##  Project 1 — Pizza Sales Analysis
 
- [Pizza_Sales.sql] 
- 
-## Project Description
+###  Business Problem
+A pizza restaurant chain wants to understand its sales performance, 
+identify top-performing products, and uncover customer purchasing 
+patterns to drive better business decisions.
 
-This project dives into pizza sales data, leveraging advanced SQL techniques to uncover key insights into sales performance, customer preferences, and revenue trends. Queries cover a range of complexity — from basic aggregation to advanced analytical functions — to derive actionable insights
-I utilized SQL to explore the data and answer key business questions to derive actionable insights.
+###  Key Business Questions Answered
+- What is the total revenue generated?
+- Which pizza size and category sells the most?
+- Which pizzas contribute the most to revenue?
+- What are the peak ordering hours?
+- How does cumulative revenue grow over time?
 
-## Tasks Performed
+###  Key Findings
 
-- Performed general data exploration and validation checks on the Pizza Sales dataset
+| Metric | Result |
+|--------|--------|
+|  Total Revenue | **$817,860** |
+|  Best Selling Size | **Large (L) — 18,526 orders** |
+|  Top Revenue Category | **Classic — $220,053** |
+|  Analysis Method | CTEs, Window Functions, JOINs |
 
-- Analyzed order trends to identify peak sales hours and customer purchasing patterns.
+### SQL Techniques Used
+- **JOINs** — combining orders, pizzas and pizza_types tables
+- **CTEs** — breaking complex queries into readable steps
+- **Window Functions** — calculating cumulative revenue over time
+- **GROUP BY & Aggregate Functions** — revenue and count by category
+- **ORDER BY & LIMIT** — ranking top performers
 
-- Computed total revenue and quantified pizza sales across different categories to evaluate performance
+###  File
+ [View Pizza Sales SQL Queries](Pizza_Sales.sql)
 
-- Compared pizza sizes and types to determine the most popular choices among customers.
+---
 
-- Ranked pizzas by revenue contribution to uncover top-performing products.
+##  Project 2 — Walmart Sales Analysis & Forecasting
 
-- Generated cumulative revenue trends over time to track sales growth and performance.
+### Business Problem
+Analyse Walmart branch sales data to identify peak sales periods, 
+top product lines, and revenue-driving customer segments to support 
+strategic business decisions.
 
-- Summarized category-wise sales distribution to provide insights into customer preferences.
+### Key Business Questions Answered
+- Which product lines generate the most revenue?
+- What are the peak sales periods by time of day and day of week?
+- Which customer segments drive the most revenue?
+- How does sales performance differ across branches?
 
-- Used SQL techniques like JOINs, WINDOW functions, CTEs, GROUP BY statements and aggregate functions for in-depth analysis 
+### SQL Techniques Used
+- **Feature Engineering** — created time of day, day of week, month columns
+- **CTEs** — structured multi-step analysis
+- **Aggregate Functions** — revenue and count by product line
+- **GROUP BY & HAVING** — segment-level analysis
+- **Window Functions** — branch performance comparisons
 
-- Presented findings in a structured format, delivering actionable insights for data-driven decision-making.
+### Files
+ [View Walmart Sales SQL Queries](Sales_Trends_at_Walmart.sql)
+ [View Dataset](Sales_Trends_at_Walmart.csv)
 
+---
 
-## Uncovering Sales Trends at Walmart
+## Skills Demonstrated
+- Advanced SQL query writing and optimisation
+- Business problem framing and analytical thinking
+- Data cleaning and feature engineering in SQL
+- Translating SQL results into business insights
+- Working with real-world messy datasets
 
- [Sales_Trends_at_Walmart.csv] (Sales_Trends_at_Walmart.sql)
+---
 
+##  Author
+**Sivani Masani**
 
-## Project Description
-
-This project involved performing extensive analysis on a database of Walmart sales data to uncover insights into branch performance, product sales trends, and customer behavior. The dataset contained transaction details like product lines, payment methods, customer types, and ratings across multiple branches.
-
-I utilized SQL to explore the data and derive insights that can help optimize sales strategies and improve customer targeting.
-
-## Tasks Performed
-
-- Performed general data exploration and validation checks on the dataset to ensure data consistency.
-
-- Engineered new features such as time of day, day of the week, and month to identify sales patterns.
-
-- Analyzed product line performance, identifying top sellers and product lines needing improvement
-
-- Calculated total revenue per month and compared VAT (Value Added Tax) across cities
-
-- Identified peak sales periods and the busiest days across different branches.
-
-- Examined customer segments, gender distribution, and revenue contribution by customer type.
-
-- Compared product line performance against average sales to classify them as Good or Bad
-
-- Ranked branches by sales performance and uncovered factors affecting sales.
-
-- Used SQL techniques like JOINs, CTEs, Window Functions, and CASE Statements for advanced analysis
-
-- Presented findings in a clear format to support business decisions and strategy formulation.
-
-Overall, this project enabled me to showcase my SQL skills to derive data-driven insights from Walmart sales data to support key business decisions and strategy.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sivanimasani/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SivaniMasani)
 
 
