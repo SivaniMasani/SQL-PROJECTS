@@ -200,8 +200,38 @@ FROM sales
 GROUP BY city 
 ORDER BY avg_tax_pct DESC;
 
+---------------Business Insights---------------------------
+-- Total revenue
+SELECT ROUND(SUM(Total), 2) AS total_revenue
+FROM sales;
 
+-- Top product line by revenue
+SELECT Product_line, ROUND(SUM(Total), 2) AS revenue
+FROM sales
+GROUP BY Product_line
+ORDER BY revenue DESC
+LIMIT 1;
 
+-- Best performing branch
+SELECT Branch, ROUND(SUM(Total), 2) AS revenue
+FROM sales
+GROUP BY Branch
+ORDER BY revenue DESC
+LIMIT 1;
+
+-- Peak time of day
+SELECT time_of_day, COUNT(*) AS transactions
+FROM sales
+GROUP BY time_of_day
+ORDER BY transactions DESC
+LIMIT 1;
+
+-- Best day of week
+SELECT day_name, COUNT(*) AS transactions
+FROM sales
+GROUP BY day_name
+ORDER BY transactions DESC
+LIMIT 1;
 
 
 
