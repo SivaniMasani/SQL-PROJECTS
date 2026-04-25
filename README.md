@@ -54,6 +54,17 @@ strategic business decisions.
 - Which customer segments drive the most revenue?
 - How does sales performance differ across branches?
 
+### Key Findings
+
+| Metric | Result |
+|--------|--------|
+|  Total Revenue | **$320,886** |
+|  Top Product Line | **Food & Beverages — $56,145** |
+|  Best Performing Branch | **Branch C — $110,491** |
+|  Peak Sales Time | **Evening — 429 transactions** |
+|  Busiest Day | **Saturday — 164 transactions** |
+|  Analysis Method | CTEs, Feature Engineering, Window Functions |
+
 ### SQL Techniques Used
 - **Feature Engineering** — created time of day, day of week, month columns
 - **CTEs** — structured multi-step analysis
